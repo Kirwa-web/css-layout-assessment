@@ -39,12 +39,14 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex; 
-justify-content: space-between
-
-
-
+justify-content: space-between;
 }
 
+article{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
 nav a {
     color: #fff;
     text-decoration: none;
