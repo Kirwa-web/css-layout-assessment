@@ -1,4 +1,5 @@
 body {
+   
     background-color: #fff;
     color: #333;
     margin: 0;
@@ -8,6 +9,8 @@ body {
 img {
     max-width: 100%;
     display: block;
+    float: left;
+    margin-right: 1em;
 }
 
 .logo {
@@ -18,13 +21,14 @@ img {
 }
 
 .grid {
-    display:grid;
-    grid-template-columns: 3fr 1fr;
-    margin: 0 auto
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1em;   
 }
+
 
 nav {
     background-color: #000;
@@ -38,17 +42,11 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex; 
-justify-content: space-between;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch
+    }
 
-article{
-    padding-left: 100px;
-    display:flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    
-}
 nav a {
     color: #fff;
     text-decoration: none;
@@ -56,12 +54,12 @@ nav a {
 }
 
 .photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid: gap 1px;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 0.1em;
 }
 
 .feature {
